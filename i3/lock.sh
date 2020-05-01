@@ -9,7 +9,7 @@
 # maim (scrot depricated in Fedora 31)
 
 IMAGE=/tmp/i3lock.png
-SCREENSHOT="maim $IMAGE" # 0.46s
+SCREENSHOT="maim --hidecursor $IMAGE" # 0.46s
 
 # All options are here: http://www.imagemagick.org/Usage/blur/#blur_args
 #BLURTYPE="0x5" # 7.52s
