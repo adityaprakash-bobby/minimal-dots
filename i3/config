@@ -191,9 +191,7 @@ bindsym XF86MonBrightnessUp exec light -A 5
 bindsym XF86MonBrightnessDown exec light -U 5
 
 # screenshot bindings
-bindsym --release Print exec scrot '/home/aditya/Pictures/Screenshots/%s_%H%M_%d.%m.%Y_$wx$h.png'
-bindsym --release Shift+Print exec scrot -s '/home/aditya/Pictures/Screenshots/%s_%H%M_%d%m%Y_$wx$h.png'
-bindsym --release $mod+Shift+Print exec scrot -u -d 4 '/home/aditya/Pictures/Screenshots/%s_%H%M_%d%m%Y_$wx$h.png'
+bindsym --release Print exec "maim -u -s -n -l -c 0.157,0.333,0.466,0.4 ~/Pictures/Screenshots/screenshot-$(date -Iseconds | cut -d'+' -f1).png"
 
 # volume control
 bindsym XF86AudioRaiseVolume exec amixer -q sset Master 5%+ unmute
