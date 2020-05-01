@@ -3,22 +3,13 @@
 # i3lock blurred screen inspired by /u/patopop007 and the blog post
 # http://plankenau.com/blog/post-10/gaussianlock
 
-# Timings are on an Intel i7-2630QM @ 2.00GHz
-
 # Dependencies:
-# imagemagick
 # i3lock
-# scrot (optional but default)
+# ImageMagick
+# maim (scrot depricated in Fedora 31)
 
 IMAGE=/tmp/i3lock.png
-SCREENSHOT="scrot $IMAGE" # 0.46s
-# IMAGE=/home/aditya/Pictures/triangles.png
-
-# Alternate screenshot method with imagemagick. NOTE: it is much slower
-# SCREENSHOT="import -window root $IMAGE" # 1.35s
-
-# Here are some imagemagick blur types
-# Uncomment one to use, if you have multiple, the last one will be used
+SCREENSHOT="maim $IMAGE" # 0.46s
 
 # All options are here: http://www.imagemagick.org/Usage/blur/#blur_args
 #BLURTYPE="0x5" # 7.52s
